@@ -1,0 +1,36 @@
+{
+  "name": "gallywix",
+  "version": "1.0.0",
+  "description": "a discord bot",
+  "main": "app.js",
+  "scripts": {
+    "bot": "babel-node ./src/bot.js --presets latest,stage-2",
+    "dev-bot": "nodemon ./src/bot.js --ignore ./dl --exec babel-node --presets latest,stage-2",
+    "dev-server": "nodemon ./src/app.js --ignore ./dl --exec babel-node --presets latest,stage-2",
+    "start": "echo \"Error: please run either bot or web\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "babel-node ./src/app.js --presets latest,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lordgallywix/gallywix.git"
+  },
+  "author": "lordgallywix",
+  "license": "MIT",
+  "homepage": "https://lordgallywix.co",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "discord.js": "^11.3.2",
+    "dotenv": "^5.0.1",
+    "lodash": "^4.17.10",
+    "mongodb": "^3.0.7",
+    "passport-bnet": "^1.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.17.3",
+    "standard": "^11.0.1"
+  }
+}
