@@ -1,0 +1,2 @@
+# gallywix
+a discord bot
