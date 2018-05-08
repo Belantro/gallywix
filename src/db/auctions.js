@@ -6,8 +6,14 @@ dotenv.load()
 class Auctions {
   constructor () {
     this.collection = 'auction_house'
+
     this.dbUrl = process.env.MONGODB_URL
+    if (!this.dbUrl) this.dbUri = process.env.MONGODB_URI
+    if (this.dbUri) this.dbUrl = this.dbUri.substring(0, this.dbUri.lastIndexOf('/'))
+
     this.dbName = process.env.MONGODB_NAME
+    if (!this.dbName) this.dbName = this.dbUri.substring(this.dbUri.lastIndexOf('/') + 1, this.dbUri.length - 1)
+
     this.MongoClient = MongoDb.MongoClient
   }
 
