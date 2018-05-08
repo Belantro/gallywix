@@ -48,6 +48,7 @@ client.on('message', (message) => {
       .then((items) => {
         if (items.length === 0) {
           message.channel.send('i did not find that item on the AH')
+          return
         }
 
         _.forEach(items, (ahItem) => {
@@ -73,6 +74,7 @@ client.on('message', (message) => {
   if (command === 'ah-scan') {
     if (message.author.toString() !== process.env.BOT_ADMIN) {
       message.channel.send('you do not have permission to execute that command')
+      return
     }
 
     message.channel.send('this may take a few minutes')
@@ -97,6 +99,7 @@ client.on('message', (message) => {
   if (command === 'ah-dbload') {
     if (message.author.toString() !== process.env.BOT_ADMIN) {
       message.channel.send('you do not have permission to execute that command')
+      return
     }
 
     message.channel.send('loading db')
@@ -117,6 +120,7 @@ client.on('message', (message) => {
   if (command === 'die') {
     if (message.author.toString() !== process.env.BOT_ADMIN) {
       message.channel.send('you do not have permission to execute that command')
+      return
     }
 
     process.exit(0)

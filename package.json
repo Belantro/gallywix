@@ -20,9 +20,17 @@
   "homepage": "https://lordgallywix.co",
   "dependencies": {
     "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
     "discord.js": "^11.3.2",
     "dotenv": "^5.0.1",
+    "koa": "^2.5.1",
+    "koa-body": "^2.5.0",
+    "koa-compose": "^4.0.0",
+    "koa-pug": "^3.0.0-2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
     "lodash": "^4.17.10",
+    "materialize": "^1.0.0",
     "mongodb": "^3.0.7",
     "passport-bnet": "^1.2.1"
   },
@@ -30,6 +38,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "foreman": "^2.0.0",
     "nodemon": "^1.17.3",
     "standard": "^11.0.1"
   }

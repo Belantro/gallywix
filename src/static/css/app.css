@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > div > header > div,
+body > div > header > div.subnav {
+  border: 0px;
+  border-radius: 0px;
+  color: #0B132B;
+  font-size: 22px;
+  width: 100%
+}
+
+form > div > ul {
+  list-style: none;
+}
+
+form > div > ul > li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+form > div > ul {
+  padding-left: 0px;
+}
+
+i.material-icons.left.settings-cog {
+  margin-right: 0 !important;
+}
+
+input[type=radio] {
+  border: 0px;
+  height: 20px;
+  vertical-align: middle; 
+  width: 27px;
+}
+
+label {
+  font-size: 22px;
+}
+
+main {
+  flex: auto;
+}
+
+nav {
+  background-color: #0B132B;
+}
+
+#toast {
+  border: 0px;
+  bottom: 0px;
+  height: 72px;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1025;
+}
+
+#toast.show {
+  visibility: visible;
+  width: 100%;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.book-icon {
+  color: #3A506B;
+  font-size: 6em;
+}
+
+.brand-logo {
+  font-family: 'Cormorant Garamond', serif;  
+}
+
+.btn {
+  background-color: #5BC0BE;
+}
+
+.card-title {
+  display: block;
+  padding-left: 1em;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.data-table-header {
+  width: 35%;
+}
+
+.fa-nav-fix {
+  color: #5BC0BE;
+}
+
+/* Fix for bug in materialize css */
+.fixed [type="checkbox"] + label, .fixed [type="radio"] + label {
+  pointer-events: auto;
+}
+
+.form-control {
+  height: 51px;
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.nav-wrapper {
+  margin-left: 1em;
+}
+
+.page-footer {
+  color: #6FFFE9;
+  background-color: #0B132B;
+  border: 0px solid #0B132B;
+  bottom: 0;
+  padding-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1000;
+}
+
+.page-footer .footer-copyright { 
+  color: #6FFFE9;
+}
+
+.page-footer .container {
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.school-name {
+  font-size: 26px;
+}
+
+.school-name > a {
+  text-decoration: none;
+}
+
+.spindly {
+  font-weight: lighter;
+  font-stretch: condensed;
+}
+
+.static {
+  position: static;
+}
+
+@media screen and (max-width: 600px) {
+  #school-name {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 0px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 0px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 0px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
